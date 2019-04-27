@@ -2,4 +2,5 @@ test_report.html
 test_results.xml
 coverage.xml
 .coverage
-.pyc
+.pytest_cache/
+__pycache__/

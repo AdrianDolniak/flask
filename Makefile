@@ -8,7 +8,10 @@ lint:
 	flake8 hello_world test
 
 test:
-	PYTHONPATH=. py.test --verbose -s --html=report.html
+	PYTHONPATH=. py.test --verbose -s --html=test_report.html
+
+test_smoke:
+    curl --fail 127.0.0.1:5000
 
 run:
 	python main.py
