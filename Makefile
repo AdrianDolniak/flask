@@ -23,7 +23,7 @@ docker_run: docker_build
 	-d flask-hello-world
 
 USERNAME=adriandolniak
-TAG=$(USERNAME)/hello-world-printer
+TAG=$(USERNAME)/flask-hello-world
 
 docker_push: docker_build
 	@docker login --username $(USERNAME)  --password $${DOCKER_PASSWORD}; \
