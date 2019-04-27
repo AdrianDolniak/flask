@@ -10,5 +10,5 @@ script:
   - make docker_push
 deploy:
   provider: heroku
-  app: flask-hello-world
+  app: limitless-everglades-24506
   api_key: ${HEROKU_API_KEY}
