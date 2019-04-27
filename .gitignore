@@ -2,7 +2,6 @@ test_report.html
 test_results.xml
 coverage.xml
 .coverage
-.cache
 .pytest_cache/
-__pycache__/
+.idea/misc.xml
 .idea/workspace.xml
