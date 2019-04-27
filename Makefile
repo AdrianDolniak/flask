@@ -7,11 +7,11 @@ deps:
 lint:
 	flake8 hello_world test
 
-test:
-	PYTHONPATH=. py.test --verbose -s --html=test_report.html
-
 test_smoke:
     curl --fail 127.0.0.1:5000
+
+test:
+	PYTHONPATH=. py.test --verbose -s --html=test_report.html --cov=. --cov-report xml --junit-xml=test_results.xml
 
 run:
 	python main.py

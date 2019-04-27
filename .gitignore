@@ -3,4 +3,5 @@ test_results.xml
 coverage.xml
 .coverage
 .pytest_cache/
-__pycache__/
+test/__pycache__/
+.idea/
