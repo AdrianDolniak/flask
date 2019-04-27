@@ -5,3 +5,4 @@ coverage.xml
 .pytest_cache/
 .idea/misc.xml
 .idea/workspace.xml
+.idea/dictionaries/adi.xml
