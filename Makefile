@@ -20,7 +20,7 @@ docker_run: docker_build
 	docker run \
 	--name flask-hello-world-dev \
 	-p 5000:5000 \
-	-d hello-world-printer
+	-d flask-hello-world
 
 USERNAME=adriandolniak
 TAG=$(USERNAME)/flask-hello-world
