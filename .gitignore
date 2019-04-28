@@ -5,6 +5,4 @@ test_results.xml
 coverage.xml
 .coverage
 .pytest_cache/
-.idea/misc.xml
-.idea/workspace.xml
-.idea/dictionaries/adi.xml
+.idea/
