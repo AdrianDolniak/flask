@@ -1,3 +1,5 @@
+**/*.pyc
+.cache
 test_report.html
 test_results.xml
 coverage.xml
