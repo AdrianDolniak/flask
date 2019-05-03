@@ -16,4 +16,4 @@ docker:
   stage: docker_build
   script:
     - apk add --update make
-    - docker build -t flask-hello-world .
+    - make docker build
