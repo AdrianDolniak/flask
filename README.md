@@ -65,7 +65,7 @@ Instalacja python virtualenv i virtualenvwrapper:
     $ sudo pip install virtualenv
     $ sudo pip install virtualenvwrapper
 
-Instalacja dockera: [dockerce howto](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+Instalacja docker-a: [dockerce howto](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 
     $ sudo apt-get remove docker docker-engine docker.io containerd runc
