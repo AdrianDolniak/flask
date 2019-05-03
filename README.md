@@ -1,7 +1,7 @@
 # Simple Flask App
 
-[![Build Status](https://travis-ci.com/AdrianDolniak/flask-hello-world.svg?branch=master)](https://travis-ci.com/AdrianDolniak/flask-hello-world) <a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=4018761&Days=1&Design=5" /></a>
-
+[![Build Status](https://travis-ci.com/AdrianDolniak/flask-hello-world.svg?branch=master)](https://travis-ci.com/AdrianDolniak/flask-hello-world) \
+<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=4018761&Days=1&Design=5" /></a>
 
 ### Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
@@ -47,12 +47,24 @@ Kontynuując pracę z projektem, aktywowanie hermetycznego środowiska dla aplik
 Integracja z TravisCI:
 
   
-    # plik .travis.yml
-    # budowa pakietu (Makefile - Docker)
+    # budowa pakietu - plik Dockerfile
+    # plik .travis.yml    
     # instalacja pakietu do repozytorium współdzielonym z klientem 
 
+https://travis-ci.com \
 https://hub.docker.com
 
+CI z Jenkins
+    
+    # plik Jenkinsfile 
+
+https://jenkins.io
+
+Gitlab i CI/CD
+
+    # plik .gitlab.yml
+
+https://gitlab.com
 
 ## Pomocnicze
 
