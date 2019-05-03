@@ -16,4 +16,4 @@ docker:
   stage: docker_build
   script:
     - apk add --update make
-    - make docker build
+    - make docker_build
