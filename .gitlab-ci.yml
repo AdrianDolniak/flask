@@ -6,8 +6,8 @@ test:
   image: "python:2.7"
   stage: test
   script:
-    - pip install -r requirements.txt
-    - pip install -r test_requirements.txt
+    - apk add --update make
+    - make deps
     - PYTHONPATH=. py.test --verbose -s
 
 docker:
@@ -16,4 +16,5 @@ docker:
     - docker:dind
   stage: docker_build
   script:
-    - docker build -t myapp .
+    - apk add --update make
+    - docker build -t flask-hello-world .
