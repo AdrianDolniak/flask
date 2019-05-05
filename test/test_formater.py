@@ -1,14 +1,37 @@
-from hello_world.formater import plain_text_upper_case
+from hello_world.formater import plain_text_upper_case, PLAIN
 from hello_world.formater import plain_text_lower_case
 from hello_world.formater import plain_text
 from hello_world.formater import format_to_json
 from hello_world.formater import format_to_xml
+from hello_world.formater import get_formatted
 import unittest
 
 
 class TestFormater(unittest.TestCase):
     def setup(self):
         pass
+
+    def test_get_formatted_1(self):
+        r = get_formatted("msg", "imie", "plain")
+        self.assertEqual(r, "imie msg")
+
+    def test_get_formatted_2(self):
+        r = get_formatted("msg", "imie", "plain_uppercase")
+        self.assertEqual(r, "IMIE MSG")
+
+    def test_get_formatted_3(self):
+        r = get_formatted("MSG", "IMIE", "plain_lowercase")
+        self.assertEqual(r, "imie msg")
+
+    def test_get_formatted_4(self):
+        r = get_formatted("msg", "imie", "json")
+        self.assertEqual(r, '{"imie": "imie", "mgs": "msg"}')
+
+    def test_get_formatted_5(self):
+        r = get_formatted("msg", "imie", "xml")
+        a = '<greetings><name>imie</name>'
+        b = '<msg>msg</msg></greetings>'
+        self.assertEquals(r, a + b)
 
     def test_plain_uppercase(self):
         r = plain_text_upper_case("WWimIE", "EEmsG")
