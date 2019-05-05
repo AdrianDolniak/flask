@@ -1,4 +1,4 @@
-from hello_world.formater import plain_text_upper_case, PLAIN
+from hello_world.formater import plain_text_upper_case
 from hello_world.formater import plain_text_lower_case
 from hello_world.formater import plain_text
 from hello_world.formater import format_to_json
