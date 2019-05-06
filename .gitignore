@@ -1,5 +1,4 @@
 **/*.pyc
 .cache
-test_report.html
 .pytest_cache/
 .idea/
