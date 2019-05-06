@@ -1,6 +1,5 @@
 **/*.pyc
 .cache
 test_report.html
-.coverage
 .pytest_cache/
 .idea/
