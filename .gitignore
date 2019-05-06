@@ -2,3 +2,7 @@
 .cache
 .pytest_cache/
 .idea/
+.coverage
+coverage.xml
+test_results.xml
+test_report.html
