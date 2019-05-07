@@ -51,8 +51,8 @@ Integracja z TravisCI:
     # plik .travis.yml    
     # instalacja pakietu do repozytorium współdzielonym z klientem 
 
-https://travis-ci.com \
-https://hub.docker.com
+ https://travis-ci.com \
+ https://hub.docker.com
 
 CI z Jenkins
     
