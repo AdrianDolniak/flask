@@ -3,7 +3,7 @@ from hello_world import app
 from hello_world.formater import SUPPORTED
 
 
-class FlaskTestCase(unittest.TestCase):
+class TestViews(unittest.TestCase):
     def setUp(self):
         app.config['TESTING'] = True
         self.app = app.test_client()
@@ -11,6 +11,11 @@ class FlaskTestCase(unittest.TestCase):
     def test_outputs(self):
         rv = self.app.get('/outputs')
         self.assertTrue(", ".join(SUPPORTED) in rv.data)
+
+    def test_msg_output(self):
+        self.app = app.test_client()
+        r = self.app.get('/')
+        self.assertTrue('Adrian Hello World!' in r.data)
 
     def test_msg_with_output_json(self):
         rv = self.app.get('/?output=json')

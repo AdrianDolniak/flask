@@ -8,9 +8,6 @@ import unittest
 
 
 class TestFormater(unittest.TestCase):
-    def setup(self):
-        pass
-
     def test_get_formatted_1(self):
         r = get_formatted("msg", "imie", "plain")
         self.assertEqual(r, "imie msg")
