@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+              sh 'make test'
               sh 'make test_xunit || true'
               xunit thresholds: [
                   skipped(failureThreshold: '0'),
