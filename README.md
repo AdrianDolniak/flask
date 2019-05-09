@@ -21,7 +21,7 @@ Rozpocząnając pracę z projektem (wykorzystując virtualenv). Hermetyczne śro
 
   Sprawdź: [documentację virtualenvwrappera](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html) oraz [biblioteki flask](http://flask.pocoo.org).
 
- Uruchamianie applikacji:
+Uruchamianie applikacji:
 
     # jako zwykły program
     $ python main.py
