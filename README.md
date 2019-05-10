@@ -54,8 +54,11 @@ Integracja z TravisCI:
  https://travis-ci.com
  
 
- Docker \
- https://hub.docker.com
+Docker
+ 
+    # Dockerfile
+ 
+https://hub.docker.com
 
 CI z Jenkins
     
